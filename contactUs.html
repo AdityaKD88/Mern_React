@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background: linear-gradient(to right, #4761a7b7, #ffffffc4),
+        url(https://wallpapers.com/images/high/green-mountains-blue-lake-nature-dt2l9zm42pjwov87.jpg);
+        background-size: cover;
+    }
+
+    .mycard{
+        background: #6b6b6b;
+        width: 30%;
+        padding: 40px;
+        box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.371), -2px -2px 6px 2px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .mycard h1{
+        color: white;
+        font-size: 1.8em;
+    }
+
+
+    .mycard label{
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .myinput, .mybtn{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+
+    .myinput:focus{
+        background: rgb(23, 2, 51);
+        color: white;
+    }
+
+    .mybtn{
+        background: linear-gradient(to right, #d8dadfb7, #ffffffc4);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+</style>
+</head>
+<body>
+<div class="mycard">
+    <h1>Contact US</h1>
+    <h4>Submit your response here...</h4>
+    <label for="email">Email</label>
+    <input class="myinput" type="email" id="email" placeholder="Enter email ID">
+    <br>
+    <br>
+
+    <label for="name">Name</label>
+    <input class="myinput" type="text" id="name" placeholder="Enter your Name">
+    <br>
+    <br>
+
+    <label for="mnum">Mobile No.</label>
+    <input class="myinput" type="number" id="mnum" placeholder="Enter Mobile Number">
+    <br>
+    <br>
+
+    <label for="msg">Message</label>
+    <textarea class="myinput" id="msg" placeholder="Write something.." style="height:120px"></textarea>
+    <br>
+    <br>
+
+    <button class="mybtn" type="submit">Send</button>
+
+</div>
+</body>
+</html>
