@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
+    
+    <style>
+        body{
+            background-image: url(https://i.pinimg.com/originals/96/db/be/96dbbe7b3663177cbed2fbf04ff02f8d.jpg);
+            background-size: cover;
+            backdrop-filter: blur(2px);
+            height: 100vh;
+        }
+        .thumb{
+            background-size: cover;
+            height: 150px;
+            background-position: center;
+        }
+
+        .search{
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 40px;
+            border: none;
+        }
+
+        header{
+            background: linear-gradient(to right, rgba(12, 22, 28, 0.703), rgba(0,0,0,0.717)),
+            url(https://cdn.wallpapersafari.com/70/43/zxCJ75.jpg);
+        }
+    </style>
+</head>
+
+  <body>
+
+    <header class="bg-dark">
+        <div class="container" style="padding: 30px;">
+            <p class="display-4 text-white text-center fw-bold">Marvel Mania</p>
+            <input placeholder="Search Movies" class="search">
+            <button class="btn btn-primary btn-lg"> <i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://coolthemestores.com/wp-content/uploads/2021/04/iron-man-marvel-chrome-theme-wallpaper.jpg);">
+                <!--<img
+                src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+                alt=""
+                /> -->
+            </div>
+
+            <div class="card-body">
+              <p class="text-muted m-0">Adventure</p>
+              <h3>Ironman</h3>
+              <button class="btn btn-primary mt-4 w-51 float-end">  <i class="fas fa-shopping-bag"></i> &nbsp; Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/345/431/598/5k-thor-ragnarok-chris-hemsworth-2017-wallpaper-thumb.jpg);">
+                <!--<img
+                src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+                alt=""
+                /> -->
+            </div>
+
+            <div class="card-body">
+              <p class="text-muted m-0">Adventure</p>
+              <h3>Thor</h3>
+
+              <button class="btn btn-primary mt-4 w-50 float-end">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/791/433/140/doctor-strange-2016-movie-wallpaper-preview.jpg);">
+                <!--<img
+                src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+                alt=""
+                />-->
+            </div>
+
+            <div class="card-body">
+              <p class="text-muted m-0">Adventure</p>
+              <h3>Doctor Strange</h3>
+
+              <button class="btn btn-primary mt-4 w-50 float-end">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://images.hdqwalls.com/download/spiderman-1280x800.jpg);"></div>
+            <!--<img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            />-->
+
+            <div class="card-body">
+              <p class="text-muted m-0">Adventure</p>
+              <h3>Spider-man</h3>
+
+              <button class="btn btn-primary mt-4 w-50 float-end">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+  </body>
+</html>
