@@ -15,37 +15,62 @@
         body{
             background-image: url(https://i.pinimg.com/originals/96/db/be/96dbbe7b3663177cbed2fbf04ff02f8d.jpg);
             background-size: cover;
+            background-attachment: fixed;
             backdrop-filter: blur(2px);
-            height: 100vh;
+            height: 200vh;
         }
         .thumb{
             background-size: cover;
-            height: 150px;
+            height: 200px;
             background-position: center;
         }
 
         .search{
-            padding: 10px;
+            padding: 10px 20px;
             width: 100%;
             box-sizing: border-box;
-            border-radius: 40px;
+            border-radius: 40px 0 0 40px;
             border: none;
+        }
+
+        .mybtn{
+            border-radius: 0 40px 40px 0;
         }
 
         header{
             background: linear-gradient(to right, rgba(12, 22, 28, 0.703), rgba(0,0,0,0.717)),
             url(https://cdn.wallpapersafari.com/70/43/zxCJ75.jpg);
         }
+
+        .mycard{
+            height: 200px;
+        }
+        
+        .my-btn{
+            position: absolute;
+            right: 20px;
+            bottom:20px;
+        }
+
+        .back-to-top{
+          position: fixed;
+          right: 20px;
+          bottom: 20px;
+        }
+
     </style>
 </head>
 
   <body>
+    <button class="back-to-top btn btn-danger"><i class="fa-2x fas fa-arrow-circle-up"></i></button>
 
     <header class="bg-dark">
         <div class="container" style="padding: 30px;">
             <p class="display-4 text-white text-center fw-bold">Marvel Mania</p>
-            <input placeholder="Search Movies" class="search">
-            <button class="btn btn-primary btn-lg"> <i class="fas fa-search"></i></button>
+            <div style="display: flex;"">
+              <input placeholder="Search Movies" class="search">
+              <button class="btn btn-primary btn-lg mybtn"> <i class="fas fa-search"></i></button>
+            </div>
         </div>
     </header>
 
@@ -60,10 +85,10 @@
                 /> -->
             </div>
 
-            <div class="card-body">
-              <p class="text-muted m-0">Adventure</p>
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Sci-Fi | 2h 6m </p>
               <h3>Ironman</h3>
-              <button class="btn btn-primary mt-4 w-51 float-end">  <i class="fas fa-shopping-bag"></i> &nbsp; Buy Now</button>
+              <button class="btn btn-primary mt-4 w-51 float-end my-btn">  <i class="fas fa-shopping-bag"></i> &nbsp; Buy Now</button>
             </div>
           </div>
         </div>
@@ -76,11 +101,11 @@
                 /> -->
             </div>
 
-            <div class="card-body">
-              <p class="text-muted m-0">Adventure</p>
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Fantasy | 1h 54m </p>
               <h3>Thor</h3>
 
-              <button class="btn btn-primary mt-4 w-50 float-end">Buy Now</button>
+              <button class="btn btn-primary mt-4 w-50 float-end my-btn">Buy Now</button>
             </div>
           </div>
         </div>
@@ -93,11 +118,11 @@
                 />-->
             </div>
 
-            <div class="card-body">
-              <p class="text-muted m-0">Adventure</p>
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Adventure | 1h 55m </p>
               <h3>Doctor Strange</h3>
 
-              <button class="btn btn-primary mt-4 w-50 float-end">Buy Now</button>
+              <button class="btn btn-primary mt-4 w-50 float-end my-btn">Buy Now</button>
             </div>
           </div>
         </div>
@@ -109,11 +134,81 @@
               alt=""
             />-->
 
-            <div class="card-body">
-              <p class="text-muted m-0">Adventure</p>
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Sci-Fi | 2h 1m </p>
               <h3>Spider-man</h3>
 
-              <button class="btn btn-primary mt-4 w-50 float-end">Buy Now</button>
+              <button class="btn btn-primary mt-4 w-50 float-end my-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://coolthemestores.com/wp-content/uploads/2021/04/iron-man-marvel-chrome-theme-wallpaper.jpg);">
+                <!--<img
+                src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+                alt=""
+                /> -->
+            </div>
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Sci-Fi | 2h 6m </p>
+              <h3>Ironman</h3>
+              <button class="btn btn-primary mt-4 w-51 float-end my-btn">  <i class="fas fa-shopping-bag"></i> &nbsp; Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/345/431/598/5k-thor-ragnarok-chris-hemsworth-2017-wallpaper-thumb.jpg);">
+                <!--<img
+                src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+                alt=""
+                /> -->
+            </div>
+
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Fantasy | 1h 54m </p>
+              <h3>Thor</h3>
+
+              <button class="btn btn-primary mt-4 w-50 float-end my-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/791/433/140/doctor-strange-2016-movie-wallpaper-preview.jpg);">
+                <!--<img
+                src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+                alt=""
+                />-->
+            </div>
+
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Adventure | 1h 55m </p>
+              <h3>Doctor Strange</h3>
+
+              <button class="btn btn-primary mt-4 w-50 float-end my-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card">
+            <div class="thumb" style="background-image: url(https://images.hdqwalls.com/download/spiderman-1280x800.jpg);"></div>
+            <!--<img
+              src="https://store-images.s-microsoft.com/image/apps.6843.14289021587791584.b9937e17-71a6-4b7c-9b62-a2203c893d9c.0dba49db-6f9b-4aa2-8532-c12409d6e03b?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"
+              alt=""
+            />-->
+
+            <div class="card-body mycard">
+              <p class="text-muted m-0">Action/Sci-Fi | 2h 1m </p>
+              <h3>Spider-man</h3>
+
+              <button class="btn btn-primary mt-4 w-50 float-end my-btn">Buy Now</button>
             </div>
           </div>
         </div>
