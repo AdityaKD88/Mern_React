@@ -1,5 +1,5 @@
 function factorial(num){
-    a=1
+    let a=1
     while(num>0){
         a=a*num
         num--
