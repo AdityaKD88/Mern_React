@@ -61,5 +61,3 @@ numbers.forEach((n)=>{
     squares.push(n**2)
 })
 console.log(squares)
-
-// MAP

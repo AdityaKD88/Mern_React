@@ -11,6 +11,7 @@ function addNums(a,b){
 //addNums(7318,938);
 //console.log(n);
 
+// return multiple values
 const sumprod = function(x, y){
     s = x + y;
     p = x * y;
