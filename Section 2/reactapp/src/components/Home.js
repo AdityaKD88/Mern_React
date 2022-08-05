@@ -7,12 +7,15 @@
 
 import React from 'react';
 import './home.css';
+import myimg from '../images/thank-you.gif'
 
 const Home = () => {
   return (
     <div>
         <h1 className='myclass' style={{color:'red', backgroundColor:'yellow'}}>Home Page</h1>
         <hr />
+        <img src='images/thank-you.gif' alt="" />
+        <img src={myimg} alt="" />
     </div>
   )
 }

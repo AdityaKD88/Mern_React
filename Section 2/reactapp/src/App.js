@@ -1,12 +1,23 @@
+import { BrowserRouter, Route, Routes, Link} from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <div>
-      <h1>My React App</h1>
-      <Home></Home>
-      <Login></Login>
+      <BrowserRouter>
+
+        <Link to="/homepage">Homepage</Link>
+        <Link to="/login">Login</Link>
+
+        <Routes>
+          <Route element={<Home></Home>} path="/" />
+          <Route element={<Home></Home>} path="/homepage" />
+          <Route element={<Login></Login>} path="/login" />
+          <Route element={<NotFound />} path="*" />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
