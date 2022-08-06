@@ -14,7 +14,9 @@ const Home = () => {
     <div>
         <h1 className='myclass' style={{color:'red', backgroundColor:'yellow'}}>Home Page</h1>
         <hr />
+        {/* public */}
         <img src='images/thank-you.gif' alt="" />
+        {/* src */}
         <img src={myimg} alt="" />
     </div>
   )
