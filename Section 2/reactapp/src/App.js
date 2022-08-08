@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import NotFound from "./components/NotFound";
 import './App.css';
 import EventHandling from "./components/EventHandling";
+import ToDo from "./components/ToDo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route element={<Home></Home>} path="/homepage" />
           <Route element={<Login></Login>} path="/login" />
           <Route element={<EventHandling />} path="/eventHandling" />
+          <Route element={<ToDo />} path="/toDo" />
           <Route element={<NotFound />} path="*" />
         </Routes>
       </BrowserRouter>

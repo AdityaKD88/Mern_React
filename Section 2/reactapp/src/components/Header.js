@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+
+  const [loggedIn, setloggedIn] = useState(false)
+
   return (
     <>
   {/* Navbar */}
@@ -49,12 +52,22 @@ const Header = () => {
               Event Handling
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/toDo">
+              To Do List
+            </NavLink>
+          </li>
         </ul>
         {/* Left links */}
         <div className="d-flex align-items-center">
-          <button type="button" className="btn btn-link px-3 me-2">
+        { !loggedIn ?
+          <button type="button" className="btn btn-link px-3 me-2"  onClick={()=>{setloggedIn(true)}}>
             Login
           </button>
+          :
+          <button className='btn btn-danger' onClick={()=>{setloggedIn(false)}}>Logout</button>
+
+          }
           <button type="button" className="btn btn-primary me-3">
             Sign up for free
           </button>
