@@ -20,6 +20,7 @@ const EventHandling = () => {
       // count++; wrong way
       setCount(count+5);
      }
+     
   return (
     <div className='container mt-5'>
         <h1 className='text-center display-4' style={{fontWeight:'bold', color:'black'}}>Event Handling</h1>

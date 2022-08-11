@@ -19,10 +19,12 @@ function App() {
 
         <Routes>
           <Route element={<Home></Home>} path="/" />
+
           <Route element={<Home></Home>} path="/homepage" />
           <Route element={<Login></Login>} path="/login" />
           <Route element={<EventHandling />} path="/eventHandling" />
           <Route element={<ToDo />} path="/toDo" />
+          
           <Route element={<NotFound />} path="*" />
         </Routes>
       </BrowserRouter>

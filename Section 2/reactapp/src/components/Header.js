@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
-
   const [loggedIn, setloggedIn] = useState(false)
 
   return (
@@ -29,8 +28,7 @@ const Header = () => {
         data-mdb-target="#navbarButtonsExample"
         aria-controls="navbarButtonsExample"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <i className="fas fa-bars" />
       </button>
       {/* Collapsible wrapper */}
