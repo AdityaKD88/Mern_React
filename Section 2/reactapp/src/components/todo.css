@@ -12,3 +12,7 @@
     color: blueviolet;
     font-weight: bold;
 }
+
+.task button{
+    align-items: flex-start;
+}

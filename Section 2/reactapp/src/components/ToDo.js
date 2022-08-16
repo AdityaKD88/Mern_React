@@ -6,7 +6,8 @@ const ToDo = () => {
     const [task, setTask] = useState("");
 
     const addToDo = () =>{
-        setTodoList([...todoList, task])
+        setTodoList([...todoList, task]);
+        setTask("");
     }
 
     const removeTodo = (index) => {
@@ -35,7 +36,7 @@ const ToDo = () => {
 
             <div className="card-body">
                 <div className='input-group'>
-                    <input className='form-control' onChange={(e) => {setTask(e.target.value)}}/>
+                    <input className='form-control' value={task} onChange={(e) => {setTask(e.target.value)}}/>
                     <button className='btn btn-primary' onClick={addToDo}>Add New Task</button>
                 </div>
                 {showTodoList()}
